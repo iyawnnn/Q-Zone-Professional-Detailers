@@ -11,6 +11,9 @@
   position: relative;
   color: #fff;
   transition: color 0.3s;
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .nav-link.hoverable::after {
@@ -31,7 +34,7 @@
 
 .nav-link.hoverable:hover,
 .nav-link.hoverable.active {
-  color: #ff7f50 !important;
+  color: #cc5020 !important;
 }
 
 .navbar-overlay {
@@ -47,6 +50,23 @@
 
 .navbar-collapse.show ~ .navbar-overlay {
   display: block;
+}
+
+.navbar-side {
+  flex-basis: 150px;
+}
+
+.collapse.navbar-collapse {
+  flex: 1;
+}
+
+.navbar-side a i {
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.navbar-side a:hover i {
+  color: #cc5020;
 }
 
 @media (max-width: 767px) {
@@ -68,5 +88,9 @@
 
   .navbar-toggler {
     z-index: 2200;
+  }
+
+  .navbar-side {
+    flex-basis: auto;
   }
 }

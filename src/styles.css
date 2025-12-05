@@ -1,6 +1,21 @@
 body {
-  background-color: #111; 
+  background-color: #111;
   color: white;
   margin: 0;
-  font-family: 'Cal Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif; /* paragraph / body text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Saira Condensed', sans-serif; /* headings */
+  font-weight: 600;
+  color: #fff;
+}
+
+p, span, li, a {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+.btn, .nav-link {
+  font-family: 'Montserrat', sans-serif;
 }
