@@ -3,24 +3,16 @@
     class="navbar navbar-expand-md navbar-dark navbar-custom py-3 px-4 position-relative"
     style="z-index: 3000"
   >
-    <div class="container-fluid">
-      <a class="navbar-brand" routerLink="/">
-        <img src="/QZoneLogo.svg" alt="Q-Zone Logo" height="60" />
-      </a>
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <!-- Left: Logo -->
+      <div class="navbar-side d-flex justify-content-start">
+        <a class="navbar-brand" routerLink="/">
+          <img src="/QZoneLogo.svg" alt="Q-Zone Logo" height="60" />
+        </a>
+      </div>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarExample01"
-        aria-controls="navbarExample01"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarExample01">
+      <!-- Center: Nav Links -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarExample01">
         <ul class="navbar-nav d-flex flex-md-row flex-column gap-3 text-center">
           <li class="nav-item">
             <a
@@ -46,10 +38,39 @@
           </li>
         </ul>
       </div>
+
+      <!-- Right: Social Icons -->
+      <div class="navbar-side d-flex justify-content-end gap-3 align-items-center d-none d-md-flex">
+        <a href="https://www.facebook.com/qzonedetailers" target="_blank" class="text-white">
+          <i class="bi bi-facebook fs-5"></i>
+        </a>
+        <a href="https://www.tiktok.com/@qzone.detailers" target="_blank" class="text-white">
+          <i class="bi bi-tiktok fs-5"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/qzone_professionaldetailers/"
+          target="_blank"
+          class="text-white"
+        >
+          <i class="bi bi-instagram fs-5"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Toggler -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarExample01"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
   </nav>
 
   <div class="navbar-overlay" (click)="closeMenu()"></div>
-
   <router-outlet></router-outlet>
 </header>
