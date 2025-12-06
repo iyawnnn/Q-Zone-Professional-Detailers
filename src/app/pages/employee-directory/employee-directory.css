@@ -1,0 +1,342 @@
+/* Base Fonts & Colors */
+body {
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+p, span, li, a {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+.section-heading {
+  color: #cc5020 !important;
+}
+
+/* Hero Section */
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url('/employeepage.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-employee-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+.hero-text-box {
+  background-color: rgba(0, 0, 0, 0.4); 
+  padding: 2rem;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-text-box:hover {
+  background-color: rgba(204, 80, 32, 0.8);
+  box-shadow: 0 0 25px #cc5020;
+}
+
+.skill-box:hover {
+  background-color: #cc5020;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(204, 80, 32, 0.3);
+}
+
+/* Owner Box */
+.owner-box {
+  width: 220px;
+  height: 220px;
+  margin: 2rem auto;
+  border: 3px solid #ff7f50;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px #ff7f50aa;
+  transition: transform 0.3s ease;
+}
+
+.owner-box:hover {
+  transform: scale(1.05);
+}
+
+.owner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Cards Style */
+.team-section {
+  padding: 4rem 0;
+  text-align: center;
+  background: none;
+}
+
+.team-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  word-wrap: break-word;
+  min-height: 400px;
+  max-width: 280px;
+  border: 2px solid transparent;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  border: 2px solid #cc5020;
+  box-shadow: 0 0 25px #cc5020;
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 3px solid #cc5020;
+}
+
+.team-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #cc5020;
+  margin-bottom: 0.25rem;
+  word-break: break-word;
+  text-align: center;
+}
+
+.team-role {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.team-bio {
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+  min-height: 3.5rem;
+  text-align: center;
+}
+
+.list-group-item {
+  background-color: #111;
+  border: 1px solid #333;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+  border-radius: 5px;
+  color: #fff;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  text-align: center;
+}
+
+.badge {
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.progress {
+  background-color: #111 !important;
+  border-radius: 5px;
+  border: 1px solid #333;
+  height: 10px;
+  margin-top: 0.3rem;
+}
+
+.progress-bar {
+  transition: width 0.5s ease;
+}
+
+/* Expertise Section */
+.expertise-section {
+  background: none;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.skill-box {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(255, 127, 80, 0.3);
+  background-color: #cc5020;
+  color: #fff;
+}
+
+.skill-box:hover h5,
+.skill-box:hover p,
+.skill-box:hover .skill-icon {
+  color: #fff;
+}
+
+.skill-icon {
+  font-size: 3rem;
+  color: #ff7f50;
+  margin-bottom: 1rem;
+}
+
+/* Culture Section */
+.culture-section {
+  background: none;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.expertise-section span,
+.culture-section span {
+  color: #cc5020 !important;
+}
+
+.culture-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.culture-gallery img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.culture-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* CTA Section */
+.cta-team-section {
+  background: none;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.cta-team-section h2 {
+  font-family: 'Saira Condensed', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cta-team-section p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-warning {
+  background-color: #ff7f50;
+  border: none;
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #cc5020;
+  color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .team-card {
+    min-height: 380px;
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-card {
+    min-height: auto;
+    max-width: 100%;
+  }
+
+  .owner-box {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .team-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .culture-gallery img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* ----------------------------------------- */
+/* NEW CTA CARD (ADDED AS REQUESTED)         */
+/* ----------------------------------------- */
+
+.cta-card {
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  padding: 3rem 2rem;
+  box-shadow: 0 0 20px rgba(204, 80, 32, 0.2);
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-card:hover {
+  transform: translateY(-5px);
+  border-color: #cc5020;
+  box-shadow: 0 0 30px rgba(204, 80, 32, 0.7);
+}
+
+.cta-card h2 {
+  color: #cc5020;
+  font-weight: 700;
+}
+
+.cta-card p {
+  color: #ccc !important;
+}

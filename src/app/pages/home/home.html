@@ -1,0 +1,404 @@
+<section class="hero-container">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="0"
+        class="active"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide-to="2"
+      ></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/HERO1.jpg" class="d-block w-100 carousel-img" alt="Slide 1" />
+        <div class="carousel-overlay left-center">
+          <h1>WELCOME TO Q-ZONE PROFESSIONAL DETAILERS</h1>
+          <p>
+            Expert car detailing, premium paint protection, and advanced coatings to keep your
+            vehicle flawless.
+          </p>
+          <div class="cta-buttons">
+            <button class="btn btn-primary me-2" (click)="navigateTo('about')">About</button>
+            <button class="btn btn-outline-light" (click)="navigateTo('about')">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="/HERO2.jpg" class="d-block w-100 carousel-img" alt="Slide 2" />
+        <div class="carousel-overlay left-center">
+          <h1>PREMIUM VEHICLE PROTECTION</h1>
+          <p>
+            We offer XPEL Paint Protection Film, Automotive Window Film, and Q-GUARD Ceramic
+            Coatings to preserve your car’s finish.
+          </p>
+          <div class="cta-buttons">
+            <button class="btn btn-primary me-2" (click)="navigateTo('services')">
+              Our Services
+            </button>
+            <button class="btn btn-outline-light" (click)="navigateTo('about')">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="/HERO3.jpg" class="d-block w-100 carousel-img" alt="Slide 3" />
+        <div class="carousel-overlay left-center">
+          <h1>DETAILING THAT SHINES</h1>
+          <p>
+            From Q-GUARD Paint Protection to Q-ZONE Auto Detailing, we bring perfection and care to
+            every vehicle we touch.
+          </p>
+          <div class="cta-buttons">
+            <button class="btn btn-primary me-2" (click)="navigateTo('employees')">
+              Meet Our Team
+            </button>
+            <button class="btn btn-outline-light" (click)="navigateTo('about')">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why-choose-us custom-padding">
+  <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
+    <!-- Left Side -->
+    <div class="left-side mb-5 mb-md-0 mb-sm-0">
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="section-heading">
+        Experience Ultimate Care: Keep Your Car Pristine, and Protected Every Day
+      </h2>
+    </div>
+
+    <!-- Divider for large screens -->
+    <div class="divider"></div>
+
+    <!-- Right Side -->
+    <div class="right-side">
+      <p class="text-center text-lg-start">
+        Q-Zone Professional Detailers combines premium products, expert care, and attention to
+        detail to keep your vehicle looking flawless. From advanced coatings to full auto detailing,
+        we make sure your car shines while protecting its value.
+      </p>
+      <div class="d-flex justify-content-center justify-content-lg-start">
+        <button class="btn btn-primary me-2" (click)="navigateTo('about')">About</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bottom Divider -->
+<div class="bottom-divider"></div>
+
+<section class="steps custom-padding">
+  <div class="container">
+    <div class="row text-center">
+      <!-- Step 1: Booking -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="step-box">
+          <h3 class="step-heading">01. Booking</h3>
+          <p>
+            Choose a convenient time and book your car detailing appointment with us online or over
+            the phone.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 2: Inspection -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="step-box">
+          <h3 class="step-heading">02. Inspection</h3>
+          <p>
+            Our experts inspect the condition of your car to determine the best treatment plan for
+            your needs.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 3: Valuation -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="step-box">
+          <h3 class="step-heading">03. Valuation</h3>
+          <p>
+            We provide you with a detailed valuation and explain the services we'll be performing on
+            your car.
+          </p>
+        </div>
+      </div>
+
+      <!-- Step 4: Completion -->
+      <div class="col-12 col-md-6 col-lg-3 mb-4">
+        <div class="step-box">
+          <h3 class="step-heading">04. Completion</h3>
+          <p>
+            Your car is fully detailed and ready to shine, giving it a fresh, clean, and
+            well-maintained look.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="latest-projects">
+  <div class="container">
+    <h2 class="section-heading">LATEST PROJECTS</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card project">
+          <img src="/SHOWCASE1.jpg" class="card-img-top" alt="Project 1" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="card project">
+          <img src="/SHOWCASE2.jpg" class="card-img-top" alt="Project 2" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="card project">
+          <img src="/SHOWCASE5.jpg" class="card-img-top" alt="Project 5" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="card project">
+          <img src="/SHOWCASE4.jpg" class="card-img-top" alt="Project 4" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="card project">
+          <img src="/SHOWCASE3.jpg" class="card-img-top" alt="Project 5" />
+        </div>
+      </div>
+      <div class="col">
+        <div class="card project">
+          <img src="/SHOWCASE6.jpg" class="card-img-top" alt="Project 6" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section custom-padding">
+  <div class="container">
+    <h2 class="testimonials-heading">WHAT OUR CLIENTS SAY</h2>
+
+    <div class="row">
+      <!-- Testimonial 1 -->
+      <div class="col-lg-4 mb-4">
+        <div class="testimonial-card">
+          <div class="testimonial-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <p class="testimonial-text">
+            "Q-Zone's detailing service was amazing! My car looks brand new. Highly recommend
+            ceramic coating service!"
+          </p>
+          <p class="testimonial-author">Carlos Mendoza</p>
+          <p class="testimonial-position">Business Owner</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-lg-4 mb-4">
+        <div class="testimonial-card">
+          <div class="testimonial-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <p class="testimonial-text">
+            "Fantastic service, the team is super friendly and professional. I trust them with all
+            my vehicles."
+          </p>
+          <p class="testimonial-author">Maria Santos</p>
+          <p class="testimonial-position">Car Enthusiast</p>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-lg-4 mb-4">
+        <div class="testimonial-card">
+          <div class="testimonial-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <p class="testimonial-text">
+            "The attention to detail at Q-Zone is unmatched. My car has never looked so good after a
+            detailing session."
+          </p>
+          <p class="testimonial-author">Andres Reyes</p>
+          <p class="testimonial-position">Tech Entrepreneur</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section custom-padding">
+  <div class="container">
+    <h2 class="faq-section-heading">FREQUENTLY ASKED QUESTIONS</h2>
+    <div class="accordion" id="faqAccordion">
+      <!-- FAQ Category 1: Services -->
+      <div class="card faq-card">
+        <div class="faq-card-header" id="headingServices">
+          <h5 class="mb-0">
+            <button
+              class="btn faq-btn"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseServices"
+              aria-expanded="true"
+              aria-controls="collapseServices"
+            >
+              What services do you offer?
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseServices"
+          class="collapse show"
+          aria-labelledby="headingServices"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="card-body faq-card-body">
+            At Q-Zone Professional Detailers, we offer a wide range of services to keep your vehicle
+            in pristine condition, including:
+            <ul>
+              <li>Paint Protection Film (XPEL)</li>
+              <li>Ceramic Coating (Q-Guard)</li>
+              <li>Paint Correction</li>
+              <li>Window Tinting (XPEL Automotive Window Film)</li>
+              <li>Full Vehicle Detailing (Interior & Exterior)</li>
+            </ul>
+            Our goal is to provide high-quality detailing services that help protect your vehicle
+            while enhancing its appearance.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Category 2: Booking -->
+      <div class="card faq-card">
+        <div class="faq-card-header" id="headingBooking">
+          <h5 class="mb-0">
+            <button
+              class="btn faq-btn collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseBooking"
+              aria-expanded="false"
+              aria-controls="collapseBooking"
+            >
+              How do I book an appointment?
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseBooking"
+          class="collapse"
+          aria-labelledby="headingBooking"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="card-body faq-card-body">
+            Booking an appointment with us is simple! You can book in the following ways:
+            <ul>
+              <li>Fill out the online booking form on our website.</li>
+              <li>Call your local Q-Zone branch directly:</li>
+              <ul>
+                <li>Qzone Apalit: (0917) 515 5772 or (0930) 493 2224</li>
+                <li>Qzone Sindalan (San Fernando): (0977) 448 6455</li>
+                <li>Qzone Saguin (San Fernando area): (0966) 190 3663</li>
+                <li>Qzone Angeles City: (0915) 952 3467</li>
+                <li>Qzone Telabastagan: (0977) 448 6455</li>
+              </ul>
+              <li>Use our online chat feature for quick inquiries and appointment scheduling.</li>
+            </ul>
+            We recommend booking ahead to secure your spot!
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Category 4: Locations -->
+      <div class="card faq-card">
+        <div class="faq-card-header" id="headingLocations">
+          <h5 class="mb-0">
+            <button
+              class="btn faq-btn collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseLocations"
+              aria-expanded="false"
+              aria-controls="collapseLocations"
+            >
+              How many locations do you have?
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseLocations"
+          class="collapse"
+          aria-labelledby="headingLocations"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="card-body faq-card-body">
+            We currently have four branches across Pampanga, Philippines:
+            <ul>
+              <li>Qzone Apalit</li>
+              <li>Qzone Sindalan (San Fernando)</li>
+              <li>Qzone Saguin (San Fernando area)</li>
+              <li>Qzone Angeles City</li>
+              <li>Qzone Telabastagan</li>
+            </ul>
+            Each branch offers a full range of detailing services, including XPEL Paint Protection
+            Film, Q-Guard Ceramic Coating, and more.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Category 5: Appointment Duration -->
+      <div class="card faq-card">
+        <div class="faq-card-header" id="headingDuration">
+          <h5 class="mb-0">
+            <button
+              class="btn faq-btn collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseDuration"
+              aria-expanded="false"
+              aria-controls="collapseDuration"
+            >
+              How long does a detailing session take?
+            </button>
+          </h5>
+        </div>
+        <div
+          id="collapseDuration"
+          class="collapse"
+          aria-labelledby="headingDuration"
+          data-bs-parent="#faqAccordion"
+        >
+          <div class="card-body faq-card-body">
+            The duration of a detailing session depends on the type of service and the condition of
+            your vehicle. Here are some general estimates:
+            <ul>
+              <li>Basic interior detailing: 2-3 hours</li>
+              <li>Exterior detailing and waxing: 3-4 hours</li>
+              <li>Paint correction: 6-8 hours (full day)</li>
+              <li>Ceramic coating: 6-8 hours (full day)</li>
+            </ul>
+            For a more accurate estimate, please contact us or consult with the branch directly to
+            discuss your needs.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

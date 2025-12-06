@@ -1,1 +1,132 @@
-<p>employee-directory works!</p>
+<!-- Hero Section -->
+<section class="hero-container bg-dark text-white d-flex align-items-center justify-content-center" style="background: url('/employeepage.jpg') center/cover no-repeat; height: 400px;">
+  <div class="hero-text-box text-center p-4">
+    <h1 class="display-4 fw-bold">Meet Our Expert Team</h1>
+    <p class="lead">Dedicated professionals delivering top-tier car detailing and vehicle protection services.</p>
+  </div>
+</section>
+
+<!-- About Q-Zone with Owner Box -->
+<div class="container my-5">
+  <div class="card shadow-lg border-0 bg-employee-card text-white p-4">
+    <div class="row align-items-center">
+      <!-- Owner Photo -->
+      <div class="col-md-4 text-center mb-3 mb-md-0">
+        <div class="owner-box mx-auto">
+          <img src="/owner.jpg" alt="Jon Quizon" class="owner-img">
+        </div>
+      </div>
+      <!-- Story -->
+      <div class="col-md-8">
+        <h3 class="card-title">About Q-Zone</h3>
+        <p class="card-text">
+          Founded by <strong>Jon Quizon</strong>, Q-Zone Professional Detailers started from a small garage 
+          with a vision to deliver excellence in car detailing. From humble beginnings, Jon built a team of passionate 
+          professionals dedicated to perfection. Today, Q-Zone serves hundreds of satisfied clients, offering both exterior 
+          and interior car detailing, customer care excellence, and innovative services. Our mission remains to provide 
+          top-quality, reliable, and professional detailing services while nurturing a culture of continuous growth, 
+          teamwork, and innovation.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Expertise Section -->
+<section class="expertise-section py-5 text-center text-white">
+  <span class="section-heading fw-bold">Our Skills</span>
+  <h2 class="mb-4">What We Excel At</h2>
+
+  <div class="d-flex flex-wrap justify-content-center gap-4">
+    <div class="card p-4 text-center shadow-sm skill-box" style="width: 250px;">
+      <i class="fas fa-shield-alt fa-3x skill-icon mb-3"></i>
+      <h5>Paint Protection</h5>
+      <p class="small">Expert application of XPEL Paint Protection Film to safeguard your car’s finish.</p>
+    </div>
+    <div class="card p-4 text-center shadow-sm skill-box" style="width: 250px;">
+      <i class="fas fa-car-sparkles fa-3x skill-icon mb-3"></i>
+      <h5>Ceramic Coating</h5>
+      <p class="small">High-quality Q-Guard Ceramic Coating for lasting shine and durability.</p>
+    </div>
+    <div class="card p-4 text-center shadow-sm skill-box" style="width: 250px;">
+      <i class="fas fa-wrench fa-3x skill-icon mb-3"></i>
+      <h5>Auto Detailing</h5>
+      <p class="small">Precision interior and exterior detailing to keep your vehicle in pristine condition.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Employee / Team Grid Section -->
+<section class="team-section py-5">
+  <div class="container">
+    <span class="section-heading fw-bold">Our Team</span>
+    <h2 class="text-white mb-4">Skilled Professionals Behind Every Detail</h2>
+
+    <div class="row g-4 justify-content-center">
+      @for(emp of employees; track emp.empNo) {
+        <div class="col-lg-3 col-md-6">
+          <div class="card h-100 text-center text-white shadow-sm team-card">
+            <img [src]="emp.photo" class="card-img-top mx-auto mt-3" alt="{{ emp.fullName }}" style="width: 120px; height: 120px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title team-name">{{ emp.fullName }}</h5>
+              <p class="team-role mb-2">{{ emp.position }}</p>
+              <p class="team-bio mb-2">{{ emp.duties }}</p>
+
+              <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item"><i class="fas fa-venus-mars me-2"></i>{{ emp.gender }}</li>
+                <li class="list-group-item" [attr.title]="emp.email"><i class="fas fa-envelope me-2"></i>{{ emp.email }}</li>
+              </ul>
+
+              <!-- Status Badge -->
+              <div class="mb-2">
+                @if(emp.status === 'Active') {
+                  <span class="badge bg-success"><i class="fas fa-check-circle me-1"></i>ACTIVE</span>
+                } @else if(emp.status === 'On Leave') {
+                  <span class="badge bg-warning text-dark"><i class="fas fa-clock me-1"></i>ON LEAVE</span>
+                } @else {
+                  <span class="badge bg-danger"><i class="fas fa-times-circle me-1"></i>INACTIVE</span>
+                }
+              </div>
+
+              <!-- Salary Progress -->
+              <p class="small mb-1">Salary: ₱{{ emp.salary | number }}</p>
+              <div class="progress" style="height: 10px;">
+                @if(emp.salary >= 33000) {
+                  <div class="progress-bar bg-success" style="width: 100%;"></div>
+                } @else if(emp.salary >= 30000) {
+                  <div class="progress-bar bg-warning" style="width: 70%;"></div>
+                } @else {
+                  <div class="progress-bar bg-danger" style="width: 50%;"></div>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+
+    @if(employees.length === 0) {
+      <div class="text-center mt-5 text-muted">
+        <h5>No employees to show</h5>
+      </div>
+    }
+  </div>
+</section>
+
+<!-- Culture Section -->
+<section class="culture-section py-5 text-white">
+  <div class="container text-center">
+    <span class="section-heading fw-bold">Our Culture</span>
+    <h2 class="mb-4">Passion, Precision, and Teamwork</h2>
+
+    <div class="d-flex flex-wrap justify-content-center gap-3 culture-gallery">
+      <img src="/teamwork.jpg" alt="Team at work" class="rounded">
+      <img src="/workshop.jpg" alt="Team workshop" class="rounded">
+      <img src="/communityservice.jpg" alt="Community service" class="rounded">
+    </div>
+
+    <p class="mt-4 small">
+      At Q-Zone, we value professionalism, continuous learning, and delivering the best results for every vehicle.
+    </p>
+  </div>
+</section>
