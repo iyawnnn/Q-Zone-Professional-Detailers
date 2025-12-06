@@ -1,0 +1,153 @@
+.services-section {
+  background-color: #111;
+  min-height: 100vh;
+}
+
+/* Divider */
+.section-divider {
+  border-top: 2px solid #1a1a1a;
+  margin: 3rem 0;
+}
+
+/* Highlights */
+.highlight-card {
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 127, 80, 0.25);
+}
+
+.highlight-card i {
+  color: #ff7f50;
+  transition: color 0.3s;
+}
+
+/* Packages */
+.package-card {
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 127, 80, 0.25);
+}
+
+.package-card h5 {
+  color: #ff7f50;
+}
+
+.package-card .service-price {
+  color: #ff7f50;
+  font-weight: 600;
+}
+
+.package-card ul li i {
+  color: #ff7f50;
+}
+
+/* Services */
+.service-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 127, 80, 0.25);
+}
+
+.service-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.service-content h4 {
+  font-family: 'Saira Condensed', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+  position: relative;
+}
+
+.service-content h4::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ff7f50;
+  margin-top: 6px;
+}
+
+.service-content h4 i {
+  color: #ff7f50;
+}
+
+.service-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.service-content {
+  padding: 1rem;
+}
+
+
+.video-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+
+/* Other Services */
+.other-service-card {
+  background-color: #1a1a1a;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.other-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 127, 80, 0.25);
+}
+
+.other-service-card i {
+  color: #ff7f50;
+}
+
+.other-service-card h5 {
+  font-family: 'Saira Condensed', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.other-service-card p {
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .service-img {
+    height: auto;
+  }
+
+  .highlight-card i {
+    font-size: 1.5rem;
+  }
+}
