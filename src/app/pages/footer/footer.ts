@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.html',
-  styleUrls: ['./home.css'],
+  selector: 'app-footer',  
+  templateUrl: './footer.html',
+  styleUrls: ['./footer.css'],
 })
-export class Home {
+export class Footer {
   constructor(private router: Router) {}
 
   navigateTo(path: string) {

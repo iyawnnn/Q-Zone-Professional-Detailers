@@ -19,3 +19,14 @@ p, span, li, a {
 .btn, .nav-link {
   font-family: 'Montserrat', sans-serif;
 }
+
+::selection {
+  background-color: #cc6020;  
+  color: #111;  
+}
+
+input::selection,
+textarea::selection {
+  background-color: #cc6020;  
+  color: white;  
+}
