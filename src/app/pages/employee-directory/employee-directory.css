@@ -19,6 +19,8 @@ p, span, li, a {
 
 .section-heading {
   color: #cc5020 !important;
+  display: block;
+  text-align: center;
 }
 
 /* Hero Section */
@@ -30,15 +32,8 @@ p, span, li, a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.bg-employee-card {
-  background-color: #1a1a1a;
-  border-radius: 12px;
-}
-
-.hero-text {
   text-align: center;
+  padding: 0 1rem;
 }
 
 .hero-text-box {
@@ -53,10 +48,17 @@ p, span, li, a {
   box-shadow: 0 0 25px #cc5020;
 }
 
-.skill-box:hover {
-  background-color: #cc5020;
+/* About Q-Zone / Owner Card */
+.bg-employee-card {
+  background-color: #1a1a1a; /* Restored background */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bg-employee-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(204, 80, 32, 0.3);
+  box-shadow: 0 15px 35px rgba(204, 80, 32, 0.5);
 }
 
 /* Owner Box */
@@ -84,11 +86,31 @@ p, span, li, a {
   border-radius: 5px;
 }
 
-/* Cards Style */
-.team-section {
-  padding: 4rem 0;
+/* Team Section */
+.team-section .container {
+  max-width: 1200px;
+  margin: 0 auto !important;
+  text-align: center; /* Centers content inside container */
+}
+
+.team-section .container > .section-heading,
+.team-section .container > h2 {
+  display: block;
   text-align: center;
-  background: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-section .row {
+  justify-content: center !important;
+  text-align: center;
+}
+
+.team-section .col-lg-3,
+.team-section .col-md-6 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
 }
 
 .team-card {
@@ -100,9 +122,10 @@ p, span, li, a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  word-wrap: break-word;
   min-height: 400px;
-  max-width: 280px;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
   border: 2px solid transparent;
 }
 
@@ -126,15 +149,12 @@ p, span, li, a {
   font-weight: 700;
   color: #cc5020;
   margin-bottom: 0.25rem;
-  word-break: break-word;
-  text-align: center;
 }
 
 .team-role {
   font-size: 1rem;
   color: #ccc;
   margin-bottom: 0.5rem;
-  text-align: center;
 }
 
 .team-bio {
@@ -143,7 +163,6 @@ p, span, li, a {
   line-height: 1.4;
   margin-bottom: 1rem;
   min-height: 3.5rem;
-  text-align: center;
 }
 
 .list-group-item {
@@ -153,9 +172,6 @@ p, span, li, a {
   margin-bottom: 0.25rem;
   border-radius: 5px;
   color: #fff;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  white-space: normal;
   text-align: center;
 }
 
@@ -166,7 +182,6 @@ p, span, li, a {
   border-radius: 12px;
   display: inline-block;
   margin-bottom: 0.5rem;
-  text-align: center;
 }
 
 .progress {
@@ -182,17 +197,12 @@ p, span, li, a {
 }
 
 /* Expertise Section */
-.expertise-section {
-  background: none;
-  text-align: center;
-  padding: 4rem 0;
-}
-
 .skill-box {
   background-color: #1a1a1a;
   border-radius: 10px;
   padding: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  width: 250px;
 }
 
 .skill-box:hover {
@@ -203,29 +213,11 @@ p, span, li, a {
 }
 
 .skill-box:hover h5,
-.skill-box:hover p,
-.skill-box:hover .skill-icon {
+.skill-box:hover p {
   color: #fff;
 }
 
-.skill-icon {
-  font-size: 3rem;
-  color: #ff7f50;
-  margin-bottom: 1rem;
-}
-
 /* Culture Section */
-.culture-section {
-  background: none;
-  padding: 4rem 0;
-  text-align: center;
-}
-
-.expertise-section span,
-.culture-section span {
-  color: #cc5020 !important;
-}
-
 .culture-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -246,75 +238,7 @@ p, span, li, a {
   transform: scale(1.05);
 }
 
-/* CTA Section */
-.cta-team-section {
-  background: none;
-  padding: 3rem 0;
-  text-align: center;
-}
-
-.cta-team-section h2 {
-  font-family: 'Saira Condensed', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.cta-team-section p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-}
-
-.btn-warning {
-  background-color: #ff7f50;
-  border: none;
-  font-size: 1rem;
-  padding: 0.6rem 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.btn-warning:hover {
-  background-color: #cc5020;
-  color: #fff;
-}
-
-/* Media Queries */
-@media (max-width: 992px) {
-  .team-card {
-    min-height: 380px;
-    max-width: 260px;
-  }
-}
-
-@media (max-width: 768px) {
-  .team-card {
-    min-height: auto;
-    max-width: 100%;
-  }
-
-  .owner-box {
-    width: 180px;
-    height: 180px;
-  }
-}
-
-@media (max-width: 576px) {
-  .team-card img {
-    width: 100px;
-    height: 100px;
-  }
-
-  .culture-gallery img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* ----------------------------------------- */
-/* NEW CTA CARD (ADDED AS REQUESTED)         */
-/* ----------------------------------------- */
-
+/* CTA Card */
 .cta-card {
   background-color: #1a1a1a;
   border-radius: 15px;
@@ -332,11 +256,93 @@ p, span, li, a {
   box-shadow: 0 0 30px rgba(204, 80, 32, 0.7);
 }
 
-.cta-card h2 {
-  color: #cc5020;
-  font-weight: 700;
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .hero-container {
+    height: 350px;
+  }
 }
 
-.cta-card p {
-  color: #ccc !important;
+@media (max-width: 992px) {
+  .hero-container {
+    height: 300px;
+    padding: 0 1rem;
+  }
+
+  .team-card {
+    max-width: 260px;
+    min-height: 360px;
+  }
+
+  .skill-box {
+    width: 200px;
+    padding: 1.5rem;
+  }
+
+  .owner-box {
+    width: 180px;
+    height: 180px;
+  }
+
+  .culture-gallery img {
+    width: 250px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .team-card {
+    max-width: 90%;
+    min-height: auto;
+  }
+
+  .skill-box {
+    width: 45%;
+    margin-bottom: 1rem;
+  }
+
+  .owner-box {
+    width: 160px;
+    height: 160px;
+    margin: 1rem auto;
+  }
+
+  .culture-gallery img {
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-text-box {
+    padding: 1rem;
+  }
+
+  .skill-box {
+    width: 100%;
+  }
+
+  .team-card {
+    width: 100%;
+  }
+
+  .owner-box {
+    width: 140px;
+    height: 140px;
+  }
+
+  .culture-gallery {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .culture-gallery img {
+    width: 100%;
+    height: auto;
+  }
 }
